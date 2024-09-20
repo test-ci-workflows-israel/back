@@ -74,5 +74,5 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           fail_on_unmatched_files: true
-          files: build/libs/*
+          files: build/libs/back.war
           token: ${{ secrets.GITHUB_TOKEN }}
