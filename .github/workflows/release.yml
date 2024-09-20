@@ -65,7 +65,7 @@ jobs:
       - name: 🌏 Setup Java
         uses: actions/setup-java@v2
         with:
-          distribution: 'microsoft'
+          distribution: 'temurin'
           java-version: '21'
 
       - name: 🛠️ Build
