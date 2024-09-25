@@ -20,12 +20,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fileName: 'back.war'
 
-      - name: 🌐 Deploy on staging/canary
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_URL }}
-          username: ${{ secrets.FTP_PROD_USERNAME }}
-          password: ${{ secrets.FTP_PROD_PASSWORD }}
-          protocol: 'ftps'
-          local-dir: dist/
-          server-dir: /
+      - run: 'ls -la'
