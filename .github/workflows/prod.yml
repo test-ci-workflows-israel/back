@@ -20,4 +20,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fileName: 'back.war'
 
-      - run: 'ls -la'
+      - run: exit 1
